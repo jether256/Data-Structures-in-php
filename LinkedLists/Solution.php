@@ -165,6 +165,43 @@ class LinkedList{
         return $i;
         
     }
+
+      public function search($el){
+      
+ 
+       
+      $temp= new Node();
+      $temp=$this->head;
+      
+      $i=0;
+      $fo=0;
+      
+      if($temp != null){
+        
+        while($temp != null){
+          
+          $i++;
+          
+          if($temp->data == $el){
+            
+            $fo++;
+            break;
+          }
+        }
+        $temp=$temp->next;
+        
+        if($fo==1){
+          
+            echo $el." is found at index = ".$i.".\n";
+        }else{
+          
+          echo "not found";
+        }
+      }
+      
+      
+
+    }
     
     public function showList(){
         
@@ -219,6 +256,8 @@ $list->popB();
 $list->popPo(2);
 
 echo "No. of nodes: ".$list->count();
+
+$list->search(22);
 
 
 $list->showList();
