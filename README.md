@@ -1,6 +1,5 @@
 <h1 align="center">Data Structures in php
 
-<div align="start" style="font-size=14px">
 Data Structure is a way of collecting and organizing data in such a way that we can perform operations on these data in an effective way.
 
 A Data Structure is a named group data of different data types which can be processed as a single unit. A data structure has well-defined operations, behavior and properties.
@@ -18,14 +17,10 @@ Traversal: Traversal of a data structure means processing all the data elements 
 Sorting: Arranging data elements of a data structure in a specified order is called sorting.
 
 Merging: Combining elements of two similar data structures to form a new data structure of the same type, is called merging.
-</div>
-
-### Contents:
-  - [DataStructures](#structures)
-      
 
 
-## structures
+
+Data Structures
 
 #### Data Structure 🤖
 - [LinkedLists](https://github.com/jether256/Data-Structures-in-php/tree/main/LinkedLists)
