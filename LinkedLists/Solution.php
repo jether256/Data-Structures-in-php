@@ -166,6 +166,10 @@ class LinkedList{
         
     }
 
+
+
+    //search linked list
+
       public function search($el){
       
  
@@ -202,6 +206,29 @@ class LinkedList{
       
 
     }
+
+//reverse linked list
+
+    public function reverse(){
+        
+        if($this->head != null){
+          
+          $temp=$this->head;
+          $prev=$this->head;
+          $cur=$this->head->next;
+          
+          $prev->next=null;
+          
+          while($cur != null){
+              $temp=$cur->next;
+              $cur->next=$prev;
+              $prev=$cur;
+              $cur=$temp;
+          }
+          $this->head=$prev;
+        }
+    }
+    
     
     public function showList(){
         
@@ -259,6 +286,7 @@ echo "No. of nodes: ".$list->count();
 
 $list->search(22);
 
+$list->reverse();
 
 $list->showList();
 
