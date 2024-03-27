@@ -229,6 +229,39 @@ class LinkedList{
         }
     }
     
+
+
+//swap nodes
+   public function swap($n1,$n2){
+       
+       $temp= new Node();
+       $temp=$this->head;
+       $i=0;
+       
+       while($temp != null){
+           $i++;
+           $temp=$temp->next;
+       }
+       
+       if($n1< 1 || $n1 > $i || $n2 < 1 || $n2 > $i)
+       return;
+       
+       $po1=$this->head;
+       $po2=$this->head;
+       
+       for($i=1;$i<$n1;$i++){
+           $po1=$po1->next;
+       }
+       
+       for($i=1;$i<$n2;$i++){
+           $po2=$po2->next;
+       }
+ 
+        $val=$po1->data;
+        $po1->data=$po2->data;
+        $po2->data=$val;
+    }
+
     
     public function showList(){
         
@@ -287,6 +320,8 @@ echo "No. of nodes: ".$list->count();
 $list->search(22);
 
 $list->reverse();
+
+$list->swap(2,3);
 
 $list->showList();
 
