@@ -1,0 +1,18 @@
+Data Structure - Stack
+
+A stack is a linear dynamic data structure that follows Last-In/First-Out (LIFO) principle. In a stack, addition of a new element and deletion of an element occurs at the same end which implies that the element which is added last in the stack will be the first to be removed from the stack.
+
+Features of stack
+It is a dynamic data structure.
+It has dynamic size.
+It uses dynamic memory allocation.
+
+Basic Operations of a Stack
+
+isEmpty(): Checks whether the stack is empty or not.
+size(): Returns the size of the stack.
+topElement(): Returns the top element of the stack.
+push(x): Adds a new element ‘x’ at the top of the stack. Consequently, size of the stack increases by 1.
+Stack Push
+pop(): Deletes the top element of the stack. Consequently, size of the stack decreases by 1.
+Stack Pop

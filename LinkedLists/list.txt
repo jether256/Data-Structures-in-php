@@ -1,0 +1,18 @@
+Data Structure - Queue
+
+A queue is a linear dynamic data structure that follows First-In/First-Out (FIFO) principle. In a queue, addition of a new element and deletion of an element occurs at different end which implies that the element which is added first in the queue will be the first to be removed from the queue.
+
+Features of queue
+
+It is a dynamic data structure.
+It has dynamic size.
+It uses dynamic memory allocation.
+Basic Operations of a Queue
+isEmpty(): Checks whether the queue is empty or not.
+size(): Returns the size of the queue.
+frontElement(): Returns the front element of the queue. It is the element which will be dequeued next.
+rearElement(): Returns the rear element of the queue. It is the element behind which next element will be enqueued.
+EnQueue(x): Adds a new element ‘x’ from the rear side of the queue. Consequently, size of the queue increases by 1.
+Queue EnQueue
+DeQueue(): Deletes the front element of the queue. Consequently, size of the queue decreases by 1.
+Queue DeQueue
